@@ -1,0 +1,103 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #111;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* HERO */
+.hero {
+    background: url('https://via.placeholder.com/1500') no-repeat center/cover;
+    color: white;
+}
+
+.hero .content {
+    color: black;   /* centers text when stacked */
+}
+
+/* WORK SAMPLE SECTION */
+.work-sample-section {
+  background: #f9f9f9;  /* light background for contrast */
+  color: #111;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.work-sample-section .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.work-sample-section .work-sample {
+  max-width: 600px;  /* image won’t exceed this width */
+  width: 100%;       /* scales down on smaller screens */
+  height: auto;      /* keeps aspect ratio */
+  margin-top: 2rem;  /* spacing below text */
+  object-fit: cover; /* crops slightly if needed without distortion */
+  border-radius: 8px; /* optional: rounded corners for style */
+}
+
+/* CONTENT BOX */
+.content {
+  max-width: 800px;
+  margin: 0 auto;  /* centers container */
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #111;
+    color: white;
+}
