@@ -7,6 +7,7 @@
 
     <!-- SEO -->
     <meta name="description" content="Official portfolio of [Artist Name]. Explore artwork, career highlights, and upcoming shows.">
+    <meta name="theme-color" content="#111111">
 
     <!-- CSS -->
     <link rel="stylesheet" href="stylesArt.css">
@@ -90,8 +91,7 @@
                 <p>Here's a highlight of my latest artwork:</p>
                 <picture>
                     <source srcset="work-sample.avif" type="image/avif">
-                    <source srcset="work-sample.webp" type="image/webp">
-                    <img src="work-sample.jpg" alt="Abstract colorful artwork sample by Eric Hypothetical" class="work-sample">
+                    <img src="work-sample.avif" alt="Abstract colorful artwork sample by Eric Hypothetical" class="work-sample" loading="lazy" decoding="async" fetchpriority="low">
                 </picture>
             </div>
         </section>

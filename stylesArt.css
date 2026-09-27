@@ -9,6 +9,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    color: #111;
+    background: #f5f1e8;
     padding-top: 80px; /* prevent fixed navbar from overlapping content */
 }
 
@@ -84,14 +86,21 @@ img:focus {
     text-align: center;
 }
 
+.section:not(.hero) {
+    content-visibility: auto;
+    contain-intrinsic-size: 1000px;
+}
+
 /* HERO */
 .hero {
-    background: url('https://via.placeholder.com/1500') no-repeat center/cover;
+    background:
+        linear-gradient(rgba(17, 17, 17, 0.45), rgba(17, 17, 17, 0.45)),
+        linear-gradient(135deg, #6b3f2a, #d7b98c 55%, #f5f1e8);
     color: white;
 }
 
 .hero .content {
-    color: black;   /* centers text when stacked */
+    color: white;
 }
 
 /* WORK SAMPLE SECTION */
@@ -111,8 +120,10 @@ img:focus {
   max-width: 600px;  /* image won’t exceed this width */
   width: 100%;       /* scales down on smaller screens */
   height: auto;      /* keeps aspect ratio */
+    display: block;
   margin-top: 2rem;  /* spacing below text */
   object-fit: cover; /* crops slightly if needed without distortion */
+    aspect-ratio: 4 / 3;
   border-radius: 8px; /* optional: rounded corners for style */
 }
 
